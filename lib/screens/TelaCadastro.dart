@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'main.dart';
+import 'TelaLogin.dart';
 
 class TelaCadastro extends StatefulWidget {
   @override

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class TelaInfos extends StatefulWidget {
+class TelaInfosPokemon extends StatefulWidget {
   @override
-  _TelaInfosState createState() => _TelaInfosState();
+  _TelaInfosPokemonState createState() => _TelaInfosPokemonState();
 }
 
-class _TelaInfosState extends State<TelaInfos> {
+class _TelaInfosPokemonState extends State<TelaInfosPokemon> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/screens/TelaInfosPokemon.dart';
 
-import 'TelaInfos.dart';
+import 'TelaInfosPokemon.dart';
 
 class TelaListagem extends StatefulWidget {
   String valor;
@@ -33,7 +34,7 @@ class _TelaListagemState extends State<TelaListagem> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => TelaInfos(),
+                        builder: (context) => TelaInfosPokemon(),
                       ));
                 }),
           ],
