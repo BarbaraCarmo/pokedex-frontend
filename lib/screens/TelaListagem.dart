@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/widgets/custom_drawer.dart';
 
 import 'TelaInfosPokemon.dart';
 import 'TelaInfosPokemon.dart';
@@ -18,6 +19,7 @@ class _TelaListagemState extends State<TelaListagem> {
         title: Text("Tela de Listagem"),
         backgroundColor: Colors.red,
       ),
+      drawer: CustomDrawer(focus: 'TelaListagem'),
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(

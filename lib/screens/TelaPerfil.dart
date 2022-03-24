@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/custom_drawer.dart';
+
 class TelaPerfil extends StatefulWidget {
   @override
   _TelaPerfilState createState() => _TelaPerfilState();
@@ -12,19 +14,24 @@ class _TelaPerfilState extends State<TelaPerfil> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Tela de Perfil"),
+        backgroundColor: Colors.red,
+      ),
+      drawer: CustomDrawer(focus: 'TelaPerfil'),
       body: Container(
         padding: EdgeInsets.all(32),
         child: Column(
           children: <Widget>[
             const Text(
-              "Você está na Tela de Login",
+              "Você está na Tela de Perfil",
               style: TextStyle(
                 fontSize: 24,
               ),
             ),
             TextField(
               keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(labelText: "Login"),
+              decoration: InputDecoration(labelText: "Perfil"),
               style: TextStyle(fontSize: 24),
               controller: _emailEditingController,
             ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/custom_drawer.dart';
+
 class TelaInfosPokemon extends StatefulWidget {
   @override
   _TelaInfosPokemonState createState() => _TelaInfosPokemonState();
@@ -13,6 +15,7 @@ class _TelaInfosPokemonState extends State<TelaInfosPokemon> {
         title: Text("Tela de infos pokemon"),
         backgroundColor: Colors.red,
       ),
+      drawer: CustomDrawer(focus: 'TelaInfosPokemon'),
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(

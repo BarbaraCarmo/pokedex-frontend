@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/Screens/TelaCadastro.dart';
-import 'package:pokedex/Screens/TelaListagem.dart';
 import 'package:pokedex/Screens/TelaLogin.dart';
 
 void main() {
