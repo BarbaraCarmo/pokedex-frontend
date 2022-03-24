@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/screens/TelaInfosPokemon.dart';
 
+import 'TelaInfosPokemon.dart';
 import 'TelaInfosPokemon.dart';
 
 class TelaListagem extends StatefulWidget {
@@ -28,7 +28,7 @@ class _TelaListagemState extends State<TelaListagem> {
               style: TextStyle(fontSize: 24),
             ),
             ElevatedButton(
-                child: Text("Ir para tela de infos"),
+                child: Text("Ir para tela de infos pokemon"),
                 style: ElevatedButton.styleFrom(primary: Colors.red),
                 onPressed: () {
                   Navigator.push(

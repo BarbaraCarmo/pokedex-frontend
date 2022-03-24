@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class TelaInfosPokemon extends StatefulWidget {
+class TelaInfosApp extends StatefulWidget {
   @override
-  _TelaInfosPokemonState createState() => _TelaInfosPokemonState();
+  _TelaInfosAppState createState() => _TelaInfosAppState();
 }
 
-class _TelaInfosPokemonState extends State<TelaInfosPokemon> {
+class _TelaInfosAppState extends State<TelaInfosApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tela de infos pokemon"),
+        title: Text("Tela de infos app"),
         backgroundColor: Colors.red,
       ),
       body: Container(
@@ -19,7 +19,7 @@ class _TelaInfosPokemonState extends State<TelaInfosPokemon> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Text(
-              "Olá você está na Tela de infos pokemon",
+              "Olá você está na Tela de infos app",
               style: TextStyle(fontSize: 24),
             ),
           ],

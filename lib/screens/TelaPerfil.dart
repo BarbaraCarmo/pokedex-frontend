@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'TelaCadastro.dart';
-import 'TelaListagem.dart';
-
-class TelaLogin extends StatefulWidget {
+class TelaPerfil extends StatefulWidget {
   @override
-  _TelaLoginState createState() => _TelaLoginState();
+  _TelaPerfilState createState() => _TelaPerfilState();
 }
 
-class _TelaLoginState extends State<TelaLogin> {
+class _TelaPerfilState extends State<TelaPerfil> {
   TextEditingController _emailEditingController = TextEditingController();
   TextEditingController _passwordEditingController = TextEditingController();
 
@@ -43,26 +40,6 @@ class _TelaLoginState extends State<TelaLogin> {
             const SizedBox(
               height: 24,
             ),
-            ElevatedButton(
-                child: Text("Ir para tela de listagem"),
-                style: ElevatedButton.styleFrom(primary: Colors.red),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) =>
-                            TelaListagem(valor: _emailEditingController.text)),
-                  );
-                }),
-            ElevatedButton(
-                child: Text("Ir para tela de cadastro"),
-                style: ElevatedButton.styleFrom(primary: Colors.red),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => TelaCadastro()),
-                  );
-                }),
           ],
         ),
       ),
