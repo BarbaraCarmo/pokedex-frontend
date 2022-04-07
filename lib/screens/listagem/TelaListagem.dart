@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/screens/listagem/widgets/list.dart';
 import 'package:pokedex/widgets/custom_drawer.dart';
 
 import '../../screens/TelaInfosPokemon.dart';
@@ -56,48 +57,7 @@ class _TelaListagemState extends State<TelaListagem> {
                     labelText: 'Pesquise aqui',
                   )),
             ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(10, 10, 20, 20),
-              child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => TelaInfosPokemon(),
-                        ));
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(20.0),
-                            bottomRight: Radius.circular(20.0),
-                            topLeft: Radius.circular(20.0),
-                            bottomLeft: Radius.circular(20.0)),
-                        color: Color.fromARGB(255, 238, 218, 44)),
-                    width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height * 0.15,
-                    // color: Colors.red,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('Nome Pokemon'),
-                        Image.network(
-                            'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png')
-                      ],
-                    ),
-                  )),
-            ),
-
-            // ElevatedButton(
-            //     child: Text("Ir para tela de infos pokemon"),
-            //     style: ElevatedButton.styleFrom(primary: Colors.red),
-            //     onPressed: () {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //             builder: (context) => TelaInfosPokemon(),
-            //           ));
-            //     }),
+            ListPokemon()
           ],
         ),
       ),
