@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'TelaCadastro.dart';
-import 'TelaListagem.dart';
+import 'listagem/TelaListagem.dart';
 
 class TelaLogin extends StatefulWidget {
   @override

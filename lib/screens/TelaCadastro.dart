@@ -17,7 +17,6 @@ class _TelaCadastroState extends State<TelaCadastro> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Tela de Cadastro"),
-        backgroundColor: Colors.red,
       ),
       body: Container(
         padding: EdgeInsets.all(32),

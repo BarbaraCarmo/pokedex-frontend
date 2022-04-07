@@ -13,9 +13,8 @@ class _TelaInfosPokemonState extends State<TelaInfosPokemon> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Tela de infos pokemon"),
-        backgroundColor: Colors.red,
       ),
-      drawer: CustomDrawer(focus: 'TelaInfosPokemon'),
+      drawer: CustomDrawer(),
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(

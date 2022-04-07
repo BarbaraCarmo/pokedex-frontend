@@ -13,9 +13,8 @@ class _TelaInfosAppState extends State<TelaInfosApp> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Tela de infos app"),
-        backgroundColor: Colors.red,
       ),
-      drawer: CustomDrawer(focus: 'TelaInfosApp'),
+      drawer: CustomDrawer(),
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(

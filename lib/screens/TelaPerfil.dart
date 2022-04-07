@@ -16,9 +16,8 @@ class _TelaPerfilState extends State<TelaPerfil> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Tela de Perfil"),
-        backgroundColor: Colors.red,
       ),
-      drawer: CustomDrawer(focus: 'TelaPerfil'),
+      drawer: CustomDrawer(),
       body: Container(
         padding: EdgeInsets.all(32),
         child: Column(
