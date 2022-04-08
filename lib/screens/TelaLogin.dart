@@ -1,43 +1,33 @@
 import 'package:flutter/material.dart';
 
-import 'main.dart';
+import 'TelaCadastro.dart';
+import 'listagem/TelaListagem.dart';
 
-class TelaCadastro extends StatefulWidget {
+class TelaLogin extends StatefulWidget {
   @override
-  _TelaCadastroState createState() => _TelaCadastroState();
+  _TelaLoginState createState() => _TelaLoginState();
 }
 
-class _TelaCadastroState extends State<TelaCadastro> {
-  TextEditingController _nameEditingController = TextEditingController();
+class _TelaLoginState extends State<TelaLogin> {
   TextEditingController _emailEditingController = TextEditingController();
   TextEditingController _passwordEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Tela de Cadastro"),
-        backgroundColor: Colors.red,
-      ),
       body: Container(
         padding: EdgeInsets.all(32),
         child: Column(
           children: <Widget>[
-            Text(
-              "Você está na Tela de Cadastro",
+            const Text(
+              "Você está na Tela de Login",
               style: TextStyle(
                 fontSize: 24,
               ),
             ),
             TextField(
               keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(labelText: "Nome"),
-              style: TextStyle(fontSize: 24),
-              controller: _nameEditingController,
-            ),
-            TextField(
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(labelText: "E-mail"),
+              decoration: InputDecoration(labelText: "Login"),
               style: TextStyle(fontSize: 24),
               controller: _emailEditingController,
             ),
@@ -50,13 +40,27 @@ class _TelaCadastroState extends State<TelaCadastro> {
               ),
               controller: _passwordEditingController,
             ),
+            const SizedBox(
+              height: 24,
+            ),
             ElevatedButton(
-                child: Text("Cadastrar"),
+                child: Text("Ir para tela de listagem"),
                 style: ElevatedButton.styleFrom(primary: Colors.red),
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => TelaLogin()),
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            TelaListagem(valor: _emailEditingController.text)),
+                  );
+                }),
+            ElevatedButton(
+                child: Text("Ir para tela de cadastro"),
+                style: ElevatedButton.styleFrom(primary: Colors.red),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TelaCadastro()),
                   );
                 }),
           ],
