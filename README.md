@@ -1,16 +1,35 @@
-# pokedex
+# Pokedex
 
-A new Flutter project.
+Projeto da disciplina Laboratório de Dispositivos Móveis do curso de Ciência da Computção PUC Minas, quarto período, primeiro semestre de 2022.
 
-## Getting Started
+## Descrição
 
-This project is a starting point for a Flutter application.
+Aplicativo mobile desenvolvido em Flutter com o objetivo de listar e visualizar pokémons. 
 
-A few resources to get you started if this is your first Flutter project:
+O backend foi desenvolvido em NestJS e PostgreSQL, contendo o CRUD para criação de conta do usuário, além das rotas para cada serviço do frontend. Inicialmente a ideia proposta é fazer a aplicação rodar em localhost, mas posteriormente levar os dados dos usuários para um banco na nuvem. Segue abaixo o link para o repositório.
+(https://github.com/Aphodomus/pokedex-backend)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Rotas
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Algumas das rotas desenvolvidas até o momento foram:
+
+- Listar todos os pokemon
+- Listar um pokemon específico
+- Fazer a paginação dos pokemon (25 por vez)
+- Criar um usuário
+- Atualizar as informações de um usuário
+- Deletar um usuário
+- Listar todos os usuários
+
+Para a realização do mesmo, todos os dados sobre os pokémons, tais como nome, número, tipo, imagem e entre outras informações foram consumidas da API PokeAPI (https://pokeapi.co/).
+
+### Telas Propostas
+
+Para a construção da aplicação foram propostas as seguintes telas:
+
+- Tela de Login
+- Tela de Cadastro
+- Tela de Perfil
+- Tela de Listagem de Pokemon
+- Tela de Informação do Pokemon
+- Tela de informações sobre o aplicativo
